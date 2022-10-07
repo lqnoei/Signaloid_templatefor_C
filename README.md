@@ -1,9 +1,8 @@
 [<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-dark-v6.png#gh-dark-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=https://github.com/signaloid/Signaloid-Demo-General-C#gh-dark-mode-only)
 [<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-light-v6.png#gh-light-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=https://github.com/signaloid/Signaloid-Demo-General-C#gh-light-mode-only)
 
-# C Project Template for the Signaloid Cloud Developer Platform
-This is a minimal example to get you started with setting up C repositories in GitHub that you can then run on the Signaloid Cloud Developer Platform. The repository contains a C source file in the `src` folder which gets compiled and executed by the Signaloid Cloud Developer Platform.
-
+# Gaussian Elimitation Algorithm
+Gaussian elimitaiton is a method for solving linear equations. Usually, it contains $n$ being-solved variables, $n\times n$ matrix and $n$ vector placed on the right hand side of systems. When considerating it in programming, we abbrievate the matrix and the vector into a matrix with indices $n\times (n+1)$. After applying the gaussian elimitation, we will first get an upper triangular matrix after elementary operations of matrix, and the solution of the system by solving directly the reduced matrix. While using Signaloid processor, we are able to see how the uncertainty of the inputs affect the results. We can actually compare it with a matrix with certain data. A brief statement of the observation is that: the reduced upper triangular matrix of uncertain matrix is very near to the true reduced matrix once the inputs data have the expectations which are near to the true data; however, the solution depends highly on the variance of the iputs data, and once the variance is too high, the accuracy decreases largely.
 ## Getting Started
 1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repository.
 2. Edit `README.md` to [adapt the “Add to signaloid.io” button's URL](#option-1--using-the-add-to-signaloidio-button).
