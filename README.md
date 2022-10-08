@@ -13,16 +13,11 @@ In other words, in order to get a relatively accurate result with implementation
 2. Starting again form the second row where the first element has already been reduced to zero, then calculate the multipiliers $s_{j}$ of other $n-2$ rows such that the second element of each row becomes zero when we do elementary operation $M_{j}-s_{j}\times M_{2}$.
 3. Iterate the above procedure until all the elements below $M_{i,i},i=1,2,\dots, n$ are zero.
 
-insert pictures showing the procedures
 
 ### Getting the Solution by Operating Directly on the Reduced Matrix
 1. For convenience, $M^{* }$ is denoted to be the reduced upper triangular matrix. At the first step, we could easily get the last element of solution $x_{n}$ by inserting $x_{n}=\frac{M_{n,n+1}^{* }}{M_{n,n}^{* }}$.
 2. Then, we substitute $x_{n}$ to its original place at the $(n-1)th$ row of $M^{* }$ and calculate $x_{n-1}$.
 3. Again, iterating the above procedures could get all the elements in solution.
-
-insert the picture showing the procedures.
-
-
 
 ## Experiments 
 ### the Control Unit
