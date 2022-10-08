@@ -19,37 +19,47 @@ In other words, in order to get a relatively accurate result with implementation
 2. Then, we substitute $x_{n}$ to its original place at the $(n-1)th$ row of $M^{* }$ and calculate $x_{n-1}$.
 3. Again, iterating the above procedures could get all the elements in solution.
 
+Check the [main.c](src/main.c) for detailed codes.
+
 ## Experiments 
 ### the Control Unit
-To better understand the performance of Signaloid C0 processor, a simple 2-dimensional linear equation systems is chosen to be the control unit.
-1,1,2;1,2,3
-with its solution 1,1
+To better understand the performance of Signaloid C0 processor, a simple 2-dimensional linear equation systems is chosen to be the control unit:
 
-The control unit is:
-1.000000	1.000000	2.000000	
-1.000000	2.000000	3.000000	
-The upper triangular matrix is:
-1.000000	1.000000	2.000000	
-0.000000	1.000000	1.000000	
-The solution to the equations is:
-x[0]=1.000000	x[1]=1.000000	
+![Output of M1](outputs/outputM1.png)
 
-verify the correctness of GE alg.
+This example verifies the correctness of implemented gaussian elimitation algorithm.
 
 ### Uniform Distribution Entries
+Now the results, obtained by the algorithm, with entries in uniform distribution are shown. One is of low variance and the other is of high variance.
+
 
 #### Expectation Near to the True Data and Low Variance
+![Output of M2](outputs/outputM2.png)
+
 #### Expectation Near to the True Data and High Variance
+![Output of M3](outputs/outputM3.png)
+
+The comparaison with the control unit shows the algorithm gives relatively correct answers.
 
 ### Gaussian Distribution Entries
+Here the results, obtained by the algorithm, with entries in gaussian distribution are shown. One is of low variance and the other is of high variance.
 
 #### Expectation Near to the True Data and Low Variance
+![Output of M4](outputs/outputM4.png)
 #### Expectation Near to the True Data and High Variance
+![Output of M5](outputs/outputM5.png)
+
+The comparaison with the control unit shows the algorithm gives relatively correct answers when the variance is low, but does not perform well when the variance is high.
 
 ### Exponential Distribution Entries
+Here the results, obtained by the algorithm, with entries in exponential distribution are shown. One is of low variance and the other is of high variance.
 
 #### Expectation Near to the True Data and Low Variance
+![Output of M6](outputs/outputM6.png)
 #### Expectation Near to the True Data and High Variance
+![Output of M7](outputs/outputM7.png)
+
+Similarily, the algorithm gives relatively correct answers when the variance is low, but does not perform well when the variance is high. However, comparing with the previous two groups, the results of this group (in case of exponential distribution) are in total lack of accuracy. This might be due to the properties of exponential distribution and the method performs on the matrix which is considerated as the expectations of each entry.
 
 
 
