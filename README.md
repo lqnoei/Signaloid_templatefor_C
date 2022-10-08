@@ -10,7 +10,7 @@ In other words, in order to get a relatively accurate result with implementation
 ## Specific Algorithm of Gaussian Elimitation
 ### Obtaining the Reduced Upper Triangular Matrix
 1. Keeping the first row $M_{1}$ unchanged, then calculate the multipiliers $s_{i}$ of other $n-1$ rows such that the first element of each row becomes zero when we do elementary operation $M_{i}-s_{i}\times M_{1}$.
-2. Starting again form the second row where the first element has already been reduced to zero, then calculate the multipiliers $s_{j}$ of other $n-2$ rows such that the second element of each row becomes zero when we do elementary operation $M_{j}-s_{j}\times M_{2}$.
+2. Starting again form the second row where the first element has already been reduced to zero, then calculate the multipiliers $s_{j}$ of other $n-2$ rows such that the second element of each row becomes zero when we do elementary operations as before.
 3. Iterate the above procedure until all the elements below $M_{i,i},i=1,2,\dots, n$ are zero.
 
 
