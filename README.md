@@ -6,7 +6,7 @@ Gaussian elimitaiton is a method for solving linear equations. Usually, it conta
 
 While using Signaloid processor, we are able to see how the uncertainty of the inputs affect the results. We can actually compare it with a matrix with certain data. A brief statement of the observation is that: the reduced upper triangular matrix of uncertain matrix is very near to the true reduced matrix once the inputs data have the expectations which are near to the true data; however, the solution depends highly on the variance of the iputs data, and once the variance is too high, the accuracy decreases largely.
 
-In other words, in order to get a relatively accurate result with implementation on Signaloid platform, it's needed to restrict the expectation and variance of input data: the expectation should be near to the true data and the variance should be small.(Normalization is a good method, we could see examples below.)
+In other words, in order to get a relatively accurate result with implementation on Signaloid platform, it's needed to restrict the expectation and variance of input data: the expectation should be near to the true data and the variance should be small.
 ## Specific Algorithm of Gaussian Elimitation
 ### Obtaining the Reduced Upper Triangular Matrix
 1. Keeping the first row $M_{1}$ unchanged, then calculate the multipiliers $s_{i}$ of other $n-1$ rows such that the first element of each row becomes zero when we do elementary operation $M_{i}-s_{i}\times M_{1}$.
@@ -42,5 +42,5 @@ verify the correctness of GE alg.
 #### Expectation Near to the True Data and Low Variance
 #### Expectation Near to the True Data and High Variance
 
-#### Normalization Can Increase the Accuracy
+
 
