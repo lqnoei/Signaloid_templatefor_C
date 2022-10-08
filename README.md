@@ -25,6 +25,15 @@ To better understand the performance of Signaloid C0 processor, a simple 2-dimen
 1,1,2;1,2,3
 with its solution 1,1
 
+The control unit is:
+1.000000	1.000000	2.000000	
+1.000000	2.000000	3.000000	
+The upper triangular matrix is:
+1.000000	1.000000	2.000000	
+0.000000	1.000000	1.000000	
+The solution to the equations is:
+x[0]=1.000000	x[1]=1.000000	
+
 verify the correctness of GE alg.
 
 ### Uniform Distribution Entries
