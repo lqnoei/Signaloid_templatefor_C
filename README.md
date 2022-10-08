@@ -6,7 +6,7 @@ Gaussian elimitaiton is a method for solving linear equations. Usually, it conta
 
 To see the accuracy of the results obtained by C0 processor, we can actually compare it with a matrix with certain data. A brief statement of the observation is that: the reduced upper triangular matrix of uncertain matrix is very near to the true reduced matrix once the inputs data have the expectations which are near to the true data; however, the solution of equations depends on the distribution of inputs data.
 
-In other words, in order to get a relatively accurate result with implementation on Signaloid platform, it's needed to restrict the expectation and variance of input data: the expectation should be near to the true data and the variance should be small.
+In other words, in order to get a relatively accurate result with implementation on Signaloid platform, it's needed to restrict the expectation and variance of input data: the expectation should be near to the true data and the variance should be relatively small.
 ## Specific Algorithm of Gaussian Elimitation
 ### Obtaining the Reduced Upper Triangular Matrix
 1. Keeping the first row $M_{1}$ unchanged, then calculate the multipiliers $s_{i}$ of other $n-1$ rows such that the first element of each row becomes zero when we do elementary operation $M_{i}-s_{i}\times M_{1}$.
