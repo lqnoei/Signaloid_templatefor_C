@@ -59,7 +59,7 @@ Here the results, obtained by the algorithm, with entries in exponential distrib
 #### Expectation Near to the True Data and High Variance
 ![Output of M7](outputs/outputM7.png)
 
-However, comparing with the previous two groups, the results of this group (in case of exponential distribution) are in total lack of accuracy. This might be due to the properties of exponential distribution and the method is performed on the matrix where each entry is considerated to be the expectation of the input data.
+However, comparing with the previous two groups, the results of this group (in case of exponential distribution) are in total lack of accuracy. This might be due to the properties of exponential distribution and the method is performed on the matrix where each entry is considerated to be the expectation of input data.
 
 
 
