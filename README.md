@@ -4,7 +4,7 @@
 # Gaussian Elimitation Algorithm
 Gaussian elimitaiton is a method for solving linear equations $Ax=b$ where $x,b$ are two $n$-dimensional vectors and $A$ is a $n\times n$ matrix. When considerating it in programming, we abbreviate the matrix $A$ and the vector $b$ into a matrix $M$ with indices $n\times (n+1)$. After applying the gaussian elimitation, we will first get a reduced upper triangular matrix after elementary operations to rows of $M^{* }$, and the solution $x$ of the system by solving directly the reduced matrix. 
 
-To see the accuracy of the results obtained by C0 processor, we can actually compare them with a matrix with certain data. A brief statement of the observation is that: the reduced upper triangular matrix of uncertain matrix is very near to the true reduced matrix once the inputs data have the expectations which are near to the true data; however, the accuracy of solutions depends on the distribution of inputs data.
+To see the accuracy of the results obtained by C0 processor, we can actually compare them with a matrix with certain data. A brief statement of the observation is that: the reduced upper triangular matrix of uncertain matrix is very near to the true reduced matrix once the input data have the expectations which are near to the true data; however, the accuracy of solutions depends on the distribution of input data.
 
 In other words, in order to get a relatively accurate result, it's needed to restrict the expectation and variance of input data: the expectation should be near to the true data and the variance should be relatively low.
 ## Specific Algorithm of Gaussian Elimitation
@@ -49,7 +49,7 @@ Here the results, obtained by the algorithm, with entries in gaussian distributi
 #### Expectation Near to the True Data and High Variance
 ![Output of M5](outputs/outputM5.png)
 
-The comparaison with the control unit shows that the algorithm gives relatively correct answers when the variance is low, but does not perform well when the variance is high.
+The comparaison with the control unit shows that the algorithm gives relatively correct answers when the variance is low, but does not perform very well when the variance is high.
 
 ### Exponential Distribution Entries
 Here the results, obtained by the algorithm, with entries in exponential distribution are shown. One is of low variance and the other is of high variance.
@@ -59,7 +59,7 @@ Here the results, obtained by the algorithm, with entries in exponential distrib
 #### Expectation Near to the True Data and High Variance
 ![Output of M7](outputs/outputM7.png)
 
-Similarily, the algorithm gives relatively correct answers when the variance is low, but does not perform well when the variance is high. However, comparing with the previous two groups, the results of this group (in case of exponential distribution) are in total lack of accuracy. This might be due to the properties of exponential distribution and the method performs on the matrix where each entry is considerated to be the expectation of the input data.
+However, comparing with the previous two groups, the results of this group (in case of exponential distribution) are in total lack of accuracy. This might be due to the properties of exponential distribution and the method is performed on the matrix where each entry is considerated to be the expectation of the input data.
 
 
 
